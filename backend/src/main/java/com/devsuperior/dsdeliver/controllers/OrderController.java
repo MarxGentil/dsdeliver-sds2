@@ -6,7 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,5 +38,11 @@ public class OrderController {
 		//para retornar o 201, que é o certo para insert ao invés de .ok que retorn 200
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri(); 
 		return ResponseEntity.created(uri).body(dto);
+	}
+	
+	@PutMapping("/{id}/delivered") //id está entre chaves porque é um parâmetro
+	public ResponseEntity<OrderDTO> setDelivered(@PathVariable Long id){
+		OrderDTO dto = service.setDelivered(id);
+		return ResponseEntity.ok().body(dto);
 	}
 }

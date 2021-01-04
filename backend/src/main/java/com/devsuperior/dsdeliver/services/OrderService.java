@@ -48,4 +48,12 @@ public class OrderService {
 		
 		return new OrderDTO(order);
 	}
+	
+	@Transactional
+	public OrderDTO setDelivered(Long id){
+		Order order = repository.getOne(id); // aqui eu já tenho o id e agora vou atualizar o campo status quando o pedido for entregue.
+		order.setStatus(OrderStatus.DELIVERED);
+		order = repository.save(order);
+		return new OrderDTO(order);
+	}
 }
