@@ -1,0 +1,5 @@
+instalar o react rout para rotas
+
+npm install react-router-dom
+
+npm install @types/react-router-dom
