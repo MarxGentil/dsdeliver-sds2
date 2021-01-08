@@ -1,0 +1,19 @@
+instalar o react rout para rotas
+
+npm install react-router-dom
+
+npm install @types/react-router-dom
+
+https://marx-aulas-sds2.herokuapp.com // conexão postgree heroku para postman
+
+npm install axios // para fazer conexão com o backend e consumir as apis rest
+
+npm install leaflet react-leaflet // instalar mapa
+npm install -D @types/leaflet     // tb do pacote do mapa
+
+jogar este link do mapa no arquivo index.css da pasta public
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   
+npm install react-select @types/react-select //combo-box
