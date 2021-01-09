@@ -17,3 +17,5 @@ jogar este link do mapa no arquivo index.css da pasta public
    crossorigin=""/>
    
 npm install react-select @types/react-select //combo-box
+
+npm install --save react-toastify //toast do react
