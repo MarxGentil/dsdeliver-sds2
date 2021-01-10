@@ -19,3 +19,10 @@ jogar este link do mapa no arquivo index.css da pasta public
 npm install react-select @types/react-select //combo-box
 
 npm install --save react-toastify //toast do react
+
+npm run build //comando dentro do site netlify.com para colocar no campo Build command
+
+build no campo Publish directory do site netlify.com
+
+No site netlify.com dentro de Deploy setting que fica na aba de Deploy quando for na hora de publicar, tem que colocar no campo Base directory onde está o nosso font de front-end (front-web)
+
